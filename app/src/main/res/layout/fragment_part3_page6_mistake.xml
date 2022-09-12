@@ -81,6 +81,32 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="330dp"
+                android:layout_height="230dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="0dp"
+
+                android:src="@drawable/part3page6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/some_id" />
+
+            <TextView
+                android:id="@+id/some_id2"
+                android:textColor="#3B4F7D"
+                style="@style/text_style_programm_pitania"
+                android:lineSpacingExtra="5sp"
+                android:translationY="-2.49sp"
+
+                app:layout_constraintTop_toBottomOf="@id/image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

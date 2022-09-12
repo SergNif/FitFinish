@@ -101,7 +101,7 @@
                 android:src="@drawable/part3page2down"
                 app:layout_constraintEnd_toEndOf="@+id/some_id"
                 app:layout_constraintStart_toStartOf="@+id/some_id"
-                app:layout_constraintTop_toTopOf="@+id/some_id" />
+                app:layout_constraintTop_toBottomOf="@+id/some_id" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
