@@ -15,7 +15,7 @@
         android:id="@+id/lin_lay1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="3dp"
 
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,30 +40,19 @@
         android:id="@+id/pic_page2_image"
         android:layout_width="287dp"
         android:layout_height="264dp"
-        android:layout_marginTop="130sp"
+        android:layout_marginTop="5dp"
 
         android:src="@drawable/pict_page_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lin_lay1" />
+
+
 
 
     <TextView
-        android:id="@+id/container_ego_flover"
-        android:layout_width="125dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="6sp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
-
-
-    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/num_text_princip_pitania"
         style="@style/num_page2"
         android:text="1"
@@ -74,7 +63,8 @@
         android:id="@+id/text_princip_pitania"
         style="@style/text_page2"
         android:text="Принципы правильного питания"
-        app:layout_constraintTop_toBottomOf="@id/pic_page2_image"
+        app:layout_constraintTop_toTopOf="@+id/num_text_princip_pitania"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
         tools:ignore="MissingConstraints" />
 
 
@@ -82,70 +72,75 @@
         android:id="@+id/num_text_list_product"
         style="@style/num_page2"
         android:text="2"
-        app:layout_constraintTop_toBottomOf="@id/text_princip_pitania"
+        app:layout_constraintTop_toBottomOf="@id/num_text_princip_pitania"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_list_product"
         style="@style/text_page2"
         android:text="Список продуктов для п/п"
-        app:layout_constraintTop_toBottomOf="@id/text_princip_pitania"
+        app:layout_constraintStart_toEndOf="@+id/num_text_list_product"
+        app:layout_constraintTop_toTopOf="@id/num_text_list_product"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/num_text_list_product_cancel"
         style="@style/num_page2"
         android:text="3"
-        app:layout_constraintTop_toBottomOf="@id/text_list_product"
+        app:layout_constraintTop_toBottomOf="@id/num_text_list_product"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_list_product_cancel"
         style="@style/text_page2"
         android:text="От каких продуктов следует отказаться"
-        app:layout_constraintTop_toBottomOf="@id/text_list_product"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_list_product_cancel"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/num_text_help_organizm"
         style="@style/num_page2"
         android:text="4"
-        app:layout_constraintTop_toBottomOf="@id/text_list_product_cancel"
+        app:layout_constraintTop_toBottomOf="@id/num_text_list_product_cancel"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_help_organizm"
         style="@style/text_page2"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
         android:text="Помощь организму при переходе на п/п"
-        app:layout_constraintTop_toBottomOf="@id/text_list_product_cancel"
+        app:layout_constraintTop_toTopOf="@id/num_text_help_organizm"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/num_text_start_go"
         style="@style/num_page2"
         android:text="5"
-        app:layout_constraintTop_toBottomOf="@id/text_help_organizm"
+        app:layout_constraintTop_toBottomOf="@id/num_text_help_organizm"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_start_go"
         style="@style/text_page2"
         android:text="С чего начать переход на п/п"
-        app:layout_constraintTop_toBottomOf="@id/text_help_organizm"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_start_go"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/num_text_individual_menu"
         style="@style/num_page2"
         android:text="6"
-        app:layout_constraintTop_toBottomOf="@id/text_start_go"
+        app:layout_constraintTop_toBottomOf="@id/num_text_start_go"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_individual_menu"
         style="@style/text_page2"
         android:text="Составление индивидуального меню"
-        app:layout_constraintTop_toBottomOf="@id/text_start_go"
+        app:layout_constraintStart_toEndOf="@+id/num_text_princip_pitania"
+        app:layout_constraintTop_toTopOf="@id/num_text_individual_menu"
         tools:ignore="MissingConstraints" />
 
 
