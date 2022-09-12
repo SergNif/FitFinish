@@ -139,27 +139,22 @@
 
         <TextView
             android:id="@+id/textView_girl"
-            android:layout_width="152dp"
+            android:layout_width="wrap_content"
             android:layout_height="123dp"
 
             android:fontFamily="@font/roboto_condensed_regular"
-            android:paddingStart="72sp"
             android:src="@drawable/ic_wes"
             android:text="\nПлан\nдля\nженщин"
+            android:paddingStart="10dp"
             android:textAlignment="viewStart"
 
             android:textColor="@color/color_text_login_grey"
             android:textSize="18sp"
+android:layout_marginLeft="110dp"
 
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.14"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4"
-            tools:layout_editor_absoluteX="268dp"
-            tools:layout_editor_absoluteY="267dp" />
+            app:layout_constraintTop_toTopOf="@+id/textView_boy"
+/>
 
         <ImageView
             android:id="@+id/imageView_boy"
@@ -181,16 +176,13 @@
             android:layout_width="74dp"
             android:layout_height="100dp"
 
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="83dp"
-            android:layout_marginBottom="7dp"
+
             android:src="@drawable/girl"
 
             app:layout_constraintBottom_toBottomOf="@id/textView_girl"
-            app:layout_constraintEnd_toEndOf="@+id/textView_girl"
+            app:layout_constraintEnd_toStartOf="@+id/textView_girl"
 
-            app:layout_constraintStart_toStartOf="@id/textView_girl"
+
             app:layout_constraintTop_toTopOf="@id/textView_girl" />
 
 
@@ -222,7 +214,8 @@
             android:background="@color/white"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/text_page1"
@@ -233,7 +226,8 @@
 
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="@+id/edit_text_page1"
-            app:layout_constraintTop_toTopOf="@+id/edit_text_page1" />
+            app:layout_constraintTop_toTopOf="@+id/edit_text_page1"
+            android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/image"
@@ -245,7 +239,8 @@
             app:layout_constraintEnd_toEndOf="@id/textView2"
             app:layout_constraintStart_toStartOf="@id/textView2"
             app:layout_constraintTop_toTopOf="@id/textView2"
-            app:layout_constraintVertical_bias="0.88" />
+            app:layout_constraintVertical_bias="0.88"
+            />
 
 
         <ProgressBar

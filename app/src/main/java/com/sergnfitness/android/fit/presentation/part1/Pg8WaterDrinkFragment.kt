@@ -162,7 +162,9 @@ class Pg8WaterDrinkFragment : Fragment() {
                     viewModel.userClass, viewModel.dataUser)
             findNavController().navigate(action)
         }
-    }
+      }
+
+
 
     fun onClickHouse(view: View) {}
     fun onClickHistoryWeightDiagramm(view: View) {}
