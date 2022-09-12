@@ -389,6 +389,7 @@ class Part2Page1Fragment : Fragment() {
         binding.lynInputWeight.isVisible = false
         binding.footerImage.isVisible = true
         binding.textBack.isVisible = false
+        binding.houseButton.isVisible = true
 
         Log.e(taG,
             " PICKER    ${viewModel.startDataAPI.value.toString()}     ${viewModel.endDataAPI.value.toString()}      ")
@@ -490,6 +491,7 @@ class Part2Page1Fragment : Fragment() {
         binding.lynInputWeight.isVisible = true
         binding.footerImage.isVisible = false
         binding.parametrsButtonsChart.isVisible = false
+        binding.houseButton.isVisible = true
         Toast.makeText(context, "Click", Toast.LENGTH_SHORT).show()
     }
 
@@ -502,6 +504,7 @@ class Part2Page1Fragment : Fragment() {
 //        binding.footerImage.isVisible = true
 //        binding.parametrsButtonsChart.isVisible = true
         new_weigt_today = binding.inputWeight.text.toString()
+        binding.houseButton.isVisible = true
 //        viewModel.dataUser.weight = new_weigt_today
         viewModel.changeWeght(binding.inputWeight.text.toString(), "$dyear-$dmonth-${dday}r")
         Log.e(taG, "onClickOkInputWeight  ${viewModel.dataUser.weight} ${dyear}-${dmonth}-${dday}")
@@ -521,6 +524,7 @@ class Part2Page1Fragment : Fragment() {
         binding.lynWeightHistory.isVisible = true
         binding.footerImage.isVisible = true
         binding.parametrsButtonsChart.isVisible = true
+        binding.houseButton.isVisible = true
     }
 
     fun setOneMenuDay() {

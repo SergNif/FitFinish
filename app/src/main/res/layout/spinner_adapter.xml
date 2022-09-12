@@ -7,7 +7,7 @@
     android:fontFamily="@font/roboto_condensed_regular"
     android:paddingHorizontal="25dp"
     android:paddingVertical="2dp"
-    android:textColor="@color/black"
+    android:textColor="@color/color_text_page2_dark"
     android:textSize="18sp"
 
     app:drawableRightCompat="@drawable/ic_baseline_double_arrow_24" />

@@ -8,8 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_page_data_fon_white"
-        android:textColor="#190F22"
+
         tools:context=".presentation.part1.Pg6SourceFiberFragment2">
 
         <!-- TODO: Update blank fragment layout -->
@@ -195,6 +194,7 @@
                 android:id="@+id/text_back"
                 android:layout_width="@dimen/hight_40dp"
                 android:layout_height="@dimen/hight_40dp"
+                android:backgroundTint="@color/bar_menu_navigation_fon_violet"
                 android:background="@drawable/ic_button_previos" />
 
             <TextView

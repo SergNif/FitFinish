@@ -45,7 +45,7 @@ class Pg8WaterDrinkViewModel @Inject constructor() : ViewModel() {
         _page8_button_water_without_gas.value = bool
         dataUser.waterWithoutGas = true
 
-        dataUser.waterWithoutGas = false
+//        dataUser.waterWithoutGas = false
         dataUser.waterSugarGas = false
         dataUser.coffee = false
         dataUser.tea = false

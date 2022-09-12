@@ -9,11 +9,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFF"
+
         android:fitsSystemWindows="true"
         android:focusableInTouchMode="true"
 
-        android:textColor="#190F22"
+
         tools:context=".fragments.Page3Data2Fragment">
 
         <!--        android:fitsSystemWindows="true"-->
@@ -274,6 +274,7 @@
                 android:id="@+id/text_back"
                 android:layout_width="@dimen/hight_40dp"
                 android:layout_height="@dimen/hight_40dp"
+                android:backgroundTint="@color/bar_menu_navigation_fon_violet"
                 android:background="@drawable/ic_button_previos" />
 
             <TextView

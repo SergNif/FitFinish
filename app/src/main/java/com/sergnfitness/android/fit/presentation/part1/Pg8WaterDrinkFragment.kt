@@ -54,6 +54,10 @@ class Pg8WaterDrinkFragment : Fragment() {
 
                 } else {
                     viewModel.changepage8ButtonWaterWithoutGas(false)
+                    page8ButtonWaterShugar.isChecked = false
+
+                    page8ButtonMoreCofee.isChecked = false
+                    page8ButtonOnlyTea.isChecked = false
                 }
             }
             page8ButtonWaterShugar.setOnCheckedChangeListener { _, isChecked ->
