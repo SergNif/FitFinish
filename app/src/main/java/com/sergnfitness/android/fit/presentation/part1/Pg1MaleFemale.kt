@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -70,21 +71,25 @@ class Pg1MaleFemale : Fragment() {
 //        }
         binding.switchtheme.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                binding.text1.setTextColor(Color.BLACK)
-                binding.text2.setTextColor(Color.BLACK)
-                binding.text3.setTextColor(Color.BLACK)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                binding.text1.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+                binding.text2.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+                binding.text3.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
 
                 Log.e(taG, "AppCompatDelegate  ${AppCompatDelegate.getDefaultNightMode()}")
             } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 Log.e(taG, "AppCompatDelegate else ${AppCompatDelegate.getDefaultNightMode()}")
-                binding.text1.setTextColor(Color.BLACK)
-                binding.text2.setTextColor(Color.BLACK)
-                binding.text3.setTextColor(Color.BLACK)
+                binding.text1.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+                binding.text2.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+                binding.text3.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
             }
 
         }
+        binding.text1.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+        binding.text2.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+        binding.text3.setTextColor(ContextCompat.getColor(requireContext(), R.color.color_text_login_grey))
+
         showParamOnDisplay()
         Log.e(taG, "woman ${viewModel.dataUser.woman}  man    ${viewModel.dataUser.man}")
         binding.imageViewBoy.setOnClickListener {

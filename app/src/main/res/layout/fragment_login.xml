@@ -13,20 +13,7 @@
     tools:context=".presentation.login.LoginFragment">
 
 
-    <ImageView
-        android:id="@+id/footer_login"
-        android:layout_width="307dp"
-        android:layout_height="231dp"
 
-        android:layout_margin="30sp"
-        android:padding="5dp"
-        android:scaleType="fitCenter"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/footer" />
 
 
     <ImageView
@@ -89,7 +76,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
 
-    <Button
+    <TextView
         android:id="@+id/login_Btn"
         android:layout_width="314dp"
         android:layout_height="56dp"
@@ -98,7 +85,7 @@
         android:fontFamily="@font/roboto_condensed_regular"
         android:gravity="center"
         android:text="@string/login"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,8 +96,8 @@
     <TextView
         android:id="@+id/noAccountText"
 
-        android:layout_width="315dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_condensed_regular"
         android:text="Нет аккаунта?\nЗарегистрироваться"
         android:textAlignment="center"
@@ -138,7 +125,20 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="555dp" />
 
+    <ImageView
+        android:id="@+id/footer_login"
+        android:layout_width="307dp"
+        android:layout_height="231dp"
 
+        android:layout_margin="30sp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintTop_toBottomOf="@+id/noAccountText"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/footer" />
 
     <ProgressBar
         android:id="@+id/loading"

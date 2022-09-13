@@ -1,11 +1,13 @@
 package com.sergnfitness.android.fit.presentation.part1
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
@@ -61,6 +63,7 @@ private lateinit var binding: FragmentPg10BadHabbitsBinding
             page10NothingOfList.setOnClickListener{
                 viewModel.changeNothingOfList()
             }
+            binding.textBack.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.bar_menu_navigation_fon_violet)))
         }
 
         viewModel.live_page10_fast_food.observe(viewLifecycleOwner){

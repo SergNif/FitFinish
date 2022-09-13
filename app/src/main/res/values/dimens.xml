@@ -3,8 +3,8 @@
     <dimen name="marg_horiz_35">35dp</dimen>
     <dimen name="width_frame_logo">320dp</dimen>
     <dimen name="hight_frame_logo">70dp</dimen>
-    <dimen name="width_green_btn_up">201sp</dimen>
-    <dimen name="hight_green_btn_up">29.85sp</dimen>
+    <dimen name="width_green_btn_up">201dp</dimen>
+    <dimen name="hight_green_btn_up">29.85dp</dimen>
     <dimen name="width_enter_data">318dp</dimen>
     <dimen name="hight_enter_data">70dp</dimen>
     <dimen name="hight_40dp">40dp</dimen>
