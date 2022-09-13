@@ -19,7 +19,7 @@
         <item name="colorPrimary">#000</item>
         <item name="colorPrimaryDark">#000</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="background_color">#131313</item>
+        <item name="background_color">#191919</item>
         <!--     Our app's background changes to black when dark mode is activated -->
         <item name="text_color">#ffff</item>
         <!--     text and button color change to white to contrast with the app's background-->
@@ -384,7 +384,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/bahianita</item>
-        <item name="android:textColor">@color/text_grey_page4</item>
+<!--        <item name="android:textColor">@color/text_grey_page4</item>-->
         <item name="android:textSize">13sp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:paddingVertical">1dp</item>

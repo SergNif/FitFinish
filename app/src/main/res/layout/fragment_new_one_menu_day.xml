@@ -54,7 +54,7 @@
                     android:layout_marginBottom="3sp"
                     android:layout_weight="1"
                     android:text="Новая запись"
-                    android:textColor="#898989"
+
                     android:textSize="12sp" />
 
                 <ImageView
@@ -80,7 +80,7 @@
 
                     android:layout_weight="1"
                     android:hint="10:00"
-                    android:textColor="#2C3339"
+
                     android:textColorHint="@color/color_text_login_grey"
                     android:textSize="20sp" />
 
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="8"
                     android:hint="Введите заголовок"
-                    android:textColor="#2C3339"
+
                     android:textColorHint="@color/color_text_login_grey"
                     android:textSize="15sp" />
 
@@ -106,7 +106,7 @@
                     android:inputType="numberDecimal"
                     android:maxLength="6"
                     android:text=""
-                    android:textColor="@color/color_text_login_grey"
+
                     android:textColorHint="@color/color_text_login_grey"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -130,7 +130,7 @@
                     android:minLines="1"
                     android:maxLines="15"
                     android:scrollbars="vertical"
-                    android:textColor="#2C3339"
+
                     android:textColorHint="@color/color_text_login_grey"
                     android:textSize="12sp" />
 

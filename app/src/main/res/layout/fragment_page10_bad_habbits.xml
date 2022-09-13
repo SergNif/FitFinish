@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--xmlns:tools="http://schemas.android.com/tools">-->
-<!--    <data>-->
-<!--        <import type="com.bignerdranch.android.finnesretrofitmvvm.presentation.fragments.MainViewModel"/>-->
-<!--        <variable-->
-<!--            name="vmPage10"-->
-<!--            type="MainViewModel" />-->
-<!--        <variable-->
-<!--            name="imgLoadPage10"-->
-<!--            type="com.bignerdranch.android.finnesretrofitmvvm.presentation.fragments.ui.adapter.ImageLoader" />-->
-<!--    </data>-->
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -58,7 +47,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/tienne_black"
         android:text="ВРЕДНЫЕ ПРИВЫЧКИ"
-        android:textColor="@color/red_text"
+
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -153,7 +142,7 @@
             android:paddingTop="2dp"
             android:text="ПРОДОЛЖИТЬ"
             android:textAlignment="center"
-            android:textColor="@color/color_text_up_black"
+
             android:textSize="15sp"
             android:textStyle="bold"
 

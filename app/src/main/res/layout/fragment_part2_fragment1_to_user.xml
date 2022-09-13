@@ -118,7 +118,7 @@
                 android:gravity="center"
 
                 android:textAllCaps="true"
-                android:textColor="#455A64"
+
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/text_id_part2_page1"
@@ -133,7 +133,7 @@
                 android:gravity="center"
                 android:paddingBottom="5dp"
 
-                android:textColor="#898989"
+
                 app:layout_constraintEnd_toEndOf="@+id/parametrs"
                 app:layout_constraintStart_toStartOf="@+id/info_user"
 
@@ -221,7 +221,7 @@
             android:gravity="center"
             android:paddingVertical="6dp"
             android:text="Настройки"
-            android:textColor="#516289"
+
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/part2page1_button_history_weight"
@@ -237,7 +237,7 @@
             android:gravity="center"
             android:paddingVertical="2dp"
             android:text="Изменить имя"
-            android:textColor="#3C3C43"
+
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@id/part2page1_button_programm_pp"
             app:layout_constraintTop_toBottomOf="@id/part2page1_button_programm_pp"
@@ -250,7 +250,7 @@
             android:clickable="true"
             android:hint=""
             android:paddingStart="12dp"
-
+android:textColor="@color/black"
             android:textAlignment="viewStart"
             app:layout_constraintTop_toBottomOf="@+id/part2page1_to_user_header_name"
             tools:ignore="MissingConstraints" />
@@ -267,7 +267,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:text="Сменить пароль"
-            android:textColor="#3C3C43"
+
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@id/part2page1_button_exampl_menu_week"
             app:layout_constraintTop_toBottomOf="@id/part2page1_button_exampl_menu_week"
@@ -291,7 +291,7 @@
                 android:layout_marginTop="1dp"
                 android:layout_weight="8"
                 android:hint="Введите старый пароль"
-
+                android:textColor="@color/black"
                 android:paddingStart="12dp"
 
                 android:textAlignment="viewStart"
@@ -332,7 +332,7 @@
                 android:layout_weight="8"
 
                 android:hint="Введите новый пароль"
-
+                android:textColor="@color/black"
                 android:paddingStart="12dp"
 
                 android:textAlignment="viewStart"
@@ -363,6 +363,7 @@
             android:paddingHorizontal="2dp"
             android:paddingVertical="2dp"
             android:text="Сохранить изменения"
+            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/lyn_new_password"
             tools:ignore="MissingConstraints" />
 

@@ -197,10 +197,13 @@ class Part2Page1Fragment : Fragment() {
             clickHouseButton()
         }
 
-        binding.textBack.setOnClickListener {
-            backToFragment()
-        }
+////        binding.textBack.setOnClickListener {
+//            backToFragment()
+//        }
 
+        binding.part2page1ButtonHistoryWeight.setOnClickListener{
+            inputWeight()
+        }
         viewModel.positionSpinnerLive.observe(viewLifecycleOwner) { it ->
             val pos: Int = 1
             pos.let { viewModel.positionSpinnerStartLive.value }
@@ -226,9 +229,9 @@ class Part2Page1Fragment : Fragment() {
             viewModel.dataUser.weight = new_weigt_today.toString()
             Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
         }
-        binding.textBack.setOnClickListener {
-            findNavController().popBackStack()
-        }
+////        binding.textBack.setOnClickListener {
+//            findNavController().popBackStack()
+//        }
         binding.part2page1ButtonHistoryData.setOnClickListener {
             Log.e(taG, "viewModel.dataUser   ${viewModel.dataUser}")
             Log.e(taG, "${args.currentUser}")
@@ -346,10 +349,30 @@ class Part2Page1Fragment : Fragment() {
         binding.inputWeight.isVisible = false
         binding.lynInputWeight.isVisible = false
         binding.footerImage.isVisible = true
-        binding.textBack.isVisible = false
+//        binding.textBack.isVisible = false
+    }
+
+    private fun inputWeight(){
+        binding.xyPlotChart.isVisible = false
+        binding.infoUser.isVisible = false
+        binding.parametrsButtonsChart.isVisible = false
+        binding.parametrs.isVisible = false
+        binding.okDatapicker.isVisible = false
+        binding.footerImage.isVisible = false
+//        binding.textBack.isVisible = false
+
+        binding.lynWeightHistory.isVisible = false
+
+        binding.lynLynDatePicker.isVisible = true
+        binding.lynDatePicker.isVisible = true
+
+        binding.lynInputWeight.isVisible = true
+        binding.inputWeight.isVisible = true
+        binding.okInputWeight.isVisible = true
     }
 
     private fun showDatePickerDialogOne() {
+
         val month_date = SimpleDateFormat("MMMM")
         val month_name: String = month_date.format(c.getTime())
 
@@ -388,7 +411,7 @@ class Part2Page1Fragment : Fragment() {
         binding.inputWeight.isVisible = false
         binding.lynInputWeight.isVisible = false
         binding.footerImage.isVisible = true
-        binding.textBack.isVisible = false
+//        binding.textBack.isVisible = false
         binding.houseButton.isVisible = true
 
         Log.e(taG,
@@ -431,7 +454,7 @@ class Part2Page1Fragment : Fragment() {
         binding.inputWeight.isVisible = false
         binding.lynInputWeight.isVisible = false
         binding.footerImage.isVisible = true
-        binding.textBack.isVisible = false
+//        binding.textBack.isVisible = false
         var dateRangeSelected: String
         val dateRangePicker = MaterialDatePicker.Builder.dateRangePicker()
             .setTitleText("Выберите даты")

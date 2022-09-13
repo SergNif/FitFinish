@@ -1,11 +1,13 @@
 package com.sergnfitness.android.fit.presentation.part3
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Spanned
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -58,6 +60,17 @@ private lateinit var binding: FragmentPart3Page3MealRegimenBinding
             )
         binding.someId.text = spanned
         binding.someId2.text = spanned2
+
+
+        if (AppCompatDelegate.getDefaultNightMode() == 2) {
+            binding.someId.setTextColor(Color.WHITE)
+            binding.someId2.setTextColor(Color.WHITE)
+
+        }
+        if (AppCompatDelegate.getDefaultNightMode() == 1) {
+            binding.someId.setTextColor(Color.BLACK)
+            binding.someId2.setTextColor(Color.BLACK)
+        }
 
 
     }

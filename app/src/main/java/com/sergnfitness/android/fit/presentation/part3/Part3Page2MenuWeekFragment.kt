@@ -1,11 +1,14 @@
 package com.sergnfitness.android.fit.presentation.part3
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Spanned
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -41,13 +44,13 @@ class Part3Page2MenuWeekFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentPart3Page2MenuWeekBinding.bind(view)
 
-binding.houseButton.setOnClickListener{
-    onClickHouse()
-}
+        binding.houseButton.setOnClickListener {
+            onClickHouse()
+        }
         val txtHtml = "<h3>Первый день</h3>" +
                 "<b>Утренний прием пищи:</b> рис 200 г, сливочное масло 10 г, один банан или одно яблоко, черный кофе.<br/>" +
                 "\n<b>Перекус:</b> подсушенный серый хлеб, вареное яйцо, томат.<br/>" +
-                "\n<b>Дневной прием пищи:</b> скумбрия на пару 200 г, салат из пекинской капусты с горошком и подсолнечным маслом 180 грамм.<br/>"+
+                "\n<b>Дневной прием пищи:</b> скумбрия на пару 200 г, салат из пекинской капусты с горошком и подсолнечным маслом 180 грамм.<br/>" +
                 "\n<b>Второй перекус:</b> нежирный творожок 120 г с ложкой 10% сметаны, зеленое яблоко, 200 мл чая.<br/>" +
                 "\n<b>Вечерний прием пищи:</b> отварные овощи 220 г, запеченный кусок говядины 140 г.<br/>" +
                 "<h3>Второй день</h3>" +
@@ -91,12 +94,21 @@ binding.houseButton.setOnClickListener{
             )
         binding.someId.text = spanned
 
+        if (AppCompatDelegate.getDefaultNightMode() == 2) {
+            binding.someId.setTextColor(Color.WHITE)
+
+        }
+        if (AppCompatDelegate.getDefaultNightMode() == 1) {
+            binding.someId.setTextColor(Color.BLACK)
+
+        }
+
     }
 
     private fun onClickHouse() {
         val action: NavDirections =
             Part3Page2MenuWeekFragmentDirections.actionPart3Page2MenuWeekFragmentToPart2Page1Fragment(
-                args.currentUser, args.currentDataUser            )
+                args.currentUser, args.currentDataUser)
         findNavController().navigate(action)
     }
 }

@@ -89,7 +89,7 @@
                 style="@style/text_style_programm_pitania"
                 android:lineSpacingExtra="1sp"
                 android:lineSpacingMultiplier="0.85"
-                android:textColor="#3B4F7D"
+
 
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +100,7 @@
                 style="@style/text_style_programm_pitania"
                 android:lineSpacingExtra="1sp"
                 android:lineSpacingMultiplier="0.85"
-                android:textColor="#3B4F7D"
+
 
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

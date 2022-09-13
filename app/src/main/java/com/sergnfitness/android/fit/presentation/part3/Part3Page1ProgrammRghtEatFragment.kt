@@ -1,11 +1,13 @@
 package com.sergnfitness.android.fit.presentation.part3
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Spanned
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -63,8 +65,40 @@ class Part3Page1ProgrammRghtEatFragment : Fragment() {
                 HtmlCompat.FROM_HTML_MODE_LEGACY // flags
             )
 
+        val htmlStr1:String = "\tОриентируйтесь на «пищевую пирамиду», согласно которой:" +
+
+                "<ul><li>\t  40% блюд на вашем столе должны содержать сложные углеводы (к ним относятся цельнозерновой хлеб, все виды крупы, кроме манной, а также злаки)</li>" +
+                "\n" +
+                "<li>\t  35% — это свежие и обработанные паром или запеканием овощи и фрукты</li>" +
+                "\n" +
+                "<li>\t  20% — это полезные белки (постное мясо, любой вид птицы и рыбы, кисломолочные и молочные продукты)</li>" +
+                "\n" +
+                "<li>\t  5% могут приходиться на жиры и сахар.<li>"
+        // spanned is the interface for text that has
+        // markup objects attached to ranges of it
+        val spanned1 : Spanned = HtmlCompat
+            // HtmlCompat is the backwards compatible version of Html  калории.
+            .fromHtml(
+                htmlStr1, // source
+                // flag that separate block-level elements with blank lines
+                // (two newline characters) in between
+                HtmlCompat.FROM_HTML_MODE_LEGACY // flags
+            )
+
         // finally, show html formatted text in text view  action_part2Page2Fragment_to_part2Page1Fragment
         binding.textDown.text = spanned
+        binding.textUp.text = spanned1
+
+        if (AppCompatDelegate.getDefaultNightMode() == 2) {
+            binding.textDown.setTextColor(Color.WHITE)
+            binding.textUp.setTextColor(Color.WHITE)
+
+        }
+        if (AppCompatDelegate.getDefaultNightMode() == 1) {
+            binding.textDown.setTextColor(Color.BLACK)
+            binding.textUp.setTextColor(Color.BLACK)
+
+        }
 
     }
 

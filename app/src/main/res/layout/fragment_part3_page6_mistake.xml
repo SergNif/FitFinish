@@ -72,7 +72,7 @@
 
             <TextView
                 android:id="@+id/some_id"
-                android:textColor="#3B4F7D"
+
                 style="@style/text_style_programm_pitania"
                 android:lineSpacingExtra="5sp"
                 android:translationY="-2.49sp"
@@ -97,7 +97,7 @@
 
             <TextView
                 android:id="@+id/some_id2"
-                android:textColor="#3B4F7D"
+
                 style="@style/text_style_programm_pitania"
                 android:lineSpacingExtra="5sp"
                 android:translationY="-2.49sp"

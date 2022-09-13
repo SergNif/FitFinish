@@ -80,7 +80,7 @@
                 android:focusableInTouchMode="true"
 
                 android:singleLine="false"
-                android:textColor="#3B4F7D"
+
                 android:translationY="-2.49sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
