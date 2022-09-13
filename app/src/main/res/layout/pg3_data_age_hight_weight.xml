@@ -70,7 +70,7 @@
             android:gravity="center"
             android:padding="2sp"
             android:text="Чтобы подобрать для Вас индивидуальный\nплан, Вам необходимо ввести свои данные"
-            android:textColor="@color/color_text_up_black"
+
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

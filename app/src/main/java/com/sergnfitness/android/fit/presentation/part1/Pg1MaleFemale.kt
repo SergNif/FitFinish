@@ -1,5 +1,7 @@
 package com.sergnfitness.android.fit.presentation.part1
 
+import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -7,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.NavDirections
@@ -14,6 +17,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.sergnfitness.android.fit.R
 import com.sergnfitness.android.fit.databinding.Pg1FragmentMaFemale1Binding
+import com.sergnfitness.android.fit.presentation.activity.MainActivity
 
 
 import com.sergnfitness.android.fit.presentation.controlUI.ChangeFonButtonPage5
@@ -26,6 +30,8 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class Pg1MaleFemale : Fragment() {
+
+
 
     lateinit var paramUser: User
 
@@ -57,6 +63,28 @@ class Pg1MaleFemale : Fragment() {
         viewModel.dataUser = args.currentDataUser
         viewModel.userClass = args.currentUser
 
+//        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+//            setTheme(R.style.darkTheme)
+//        } else {
+//            setTheme(R.style.AppTheme)
+//        }
+        binding.switchtheme.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                binding.text1.setTextColor(Color.BLACK)
+                binding.text2.setTextColor(Color.BLACK)
+                binding.text3.setTextColor(Color.BLACK)
+
+                Log.e(taG, "AppCompatDelegate  ${AppCompatDelegate.getDefaultNightMode()}")
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                Log.e(taG, "AppCompatDelegate else ${AppCompatDelegate.getDefaultNightMode()}")
+                binding.text1.setTextColor(Color.BLACK)
+                binding.text2.setTextColor(Color.BLACK)
+                binding.text3.setTextColor(Color.BLACK)
+            }
+
+        }
         showParamOnDisplay()
         Log.e(taG, "woman ${viewModel.dataUser.woman}  man    ${viewModel.dataUser.man}")
         binding.imageViewBoy.setOnClickListener {
@@ -135,6 +163,8 @@ class Pg1MaleFemale : Fragment() {
 //            }
 //        }
     }
+
+
 
     private fun goNext() {
         Log.e(taG, "viewModel.dataUser   ${viewModel.dataUser}")

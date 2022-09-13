@@ -24,6 +24,7 @@
             app:layout_constraintVertical_bias="0.05" />
 
         <!-- TODO: Update blank fragment layout -->
+
         <LinearLayout
             android:id="@+id/lin_lay1"
             android:layout_width="@dimen/width_frame_logo"
@@ -34,6 +35,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.05">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:padding="10dp"
+                android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+                android:textAlignment="center"
+                android:textColor="?attr/text_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <ImageView
@@ -142,19 +157,18 @@
             android:layout_width="wrap_content"
             android:layout_height="123dp"
 
+            android:layout_marginLeft="110dp"
             android:fontFamily="@font/roboto_condensed_regular"
+            android:paddingStart="10dp"
             android:src="@drawable/ic_wes"
             android:text="\nПлан\nдля\nженщин"
-            android:paddingStart="10dp"
-            android:textAlignment="viewStart"
 
+            android:textAlignment="viewStart"
             android:textColor="@color/color_text_login_grey"
             android:textSize="18sp"
-android:layout_marginLeft="110dp"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView_boy"
-/>
+            app:layout_constraintTop_toTopOf="@+id/textView_boy" />
 
         <ImageView
             android:id="@+id/imageView_boy"
@@ -213,9 +227,9 @@ android:layout_marginLeft="110dp"
             android:layout_marginTop="50sp"
             android:background="@color/white"
             android:textColor="@color/black"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/textView2"
-            android:visibility="gone"/>
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
 
         <TextView
             android:id="@+id/text_page1"
@@ -225,9 +239,9 @@ android:layout_marginLeft="110dp"
             android:background="@color/white"
 
             android:textColor="@color/black"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/edit_text_page1"
-            app:layout_constraintTop_toTopOf="@+id/edit_text_page1"
-            android:visibility="gone"/>
+            app:layout_constraintTop_toTopOf="@+id/edit_text_page1" />
 
         <ImageView
             android:id="@+id/image"
@@ -239,7 +253,53 @@ android:layout_marginLeft="110dp"
             app:layout_constraintEnd_toEndOf="@id/textView2"
             app:layout_constraintStart_toStartOf="@id/textView2"
             app:layout_constraintTop_toTopOf="@id/textView2"
-            app:layout_constraintVertical_bias="0.88"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchtheme"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="68dp"
+
+            android:textColor="?attr/text_color"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тёмная"
+            app:layout_constraintStart_toEndOf="@+id/switchtheme"
+            app:layout_constraintTop_toTopOf="@+id/switchtheme"
+            app:layout_constraintBottom_toBottomOf="@+id/switchtheme"
+            android:textColor="?attr/text_color"
+            />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Светлая"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/switchtheme"
+            app:layout_constraintTop_toTopOf="@+id/switchtheme"
+            app:layout_constraintBottom_toBottomOf="@+id/switchtheme"
+            android:textColor="?attr/text_color"
+            />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тема"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="@+id/switchtheme"
+            app:layout_constraintEnd_toEndOf="@+id/switchtheme"
+            app:layout_constraintTop_toBottomOf="@+id/switchtheme"
+            android:textColor="?attr/text_color"
             />
 
 

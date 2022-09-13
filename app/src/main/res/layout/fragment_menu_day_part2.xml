@@ -86,7 +86,7 @@
                     android:textAlignment="center"
                     android:paddingBottom="2dp"
                     android:text="У тебя все получится!"
-                    android:textColor="#898989"
+
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/parametrs"
                     app:layout_constraintStart_toStartOf="@+id/info_user"
@@ -99,7 +99,7 @@
                     android:fontFamily="@font/open_sans"
                     android:textAlignment="center"
                     android:paddingBottom="3dp"
-                    android:textColor="#898989"
+
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/parametrs"
                     app:layout_constraintStart_toStartOf="@+id/info_user"
@@ -113,7 +113,7 @@
                 android:fontFamily="@font/roboto_condensed_regular"
                 android:textAlignment="center"
                 android:text="ФИЗИЧЕСКАЯ АКТИВНОСТЬ"
-                android:textColor="#455A64"
+
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/text_id_part2_page1"
@@ -128,7 +128,7 @@
                 android:gravity="end"
                 android:textAlignment="textEnd"
                 android:paddingBottom="4dp"
-                android:textColor="#898989"
+
                 app:layout_constraintEnd_toEndOf="@+id/parametrs"
                 app:layout_constraintStart_toStartOf="@+id/info_user"
                 app:layout_constraintTop_toBottomOf="@id/text_name_user_part2_page1" />
@@ -152,7 +152,7 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:paddingHorizontal="6sp"
-                android:textColor="@color/white"
+
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/part2page1_button_history_weight" />
@@ -166,7 +166,7 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:paddingHorizontal="6sp"
-                android:textColor="@color/white"
+
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -178,7 +178,7 @@
                 android:clickable="true"
                 android:gravity="center"
                 android:paddingHorizontal="6sp"
-                android:textColor="@color/white"
+
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/part2page1_button_history_weight" />
@@ -266,7 +266,7 @@
                     android:gravity="center"
                     android:text="Блокнот"
 
-                    android:textColor="#516289"
+
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:typeface="sans" />

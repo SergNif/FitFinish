@@ -1,11 +1,13 @@
 package com.sergnfitness.android.fit.presentation.adapter
 
 import android.content.ContentValues
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.RecyclerView
 import com.sergnfitness.android.fit.R
 import com.sergnfitness.data.repository.UserRepositoryCompanionImpl
@@ -99,6 +101,27 @@ string1.text = f.conv(data.data.toString(),1)
             string3.text = data.menu.joinToString(separator = "/n")
             string4.text = "Вес ${data.weight.toString()}"
             string5.text = data.id_note.toString()
+
+//            textView1 = view.findViewById(R.id.textViewRecyclrString1Mmenu)
+//            textView2 = view.findViewById(R.id.textViewRecyclrString2Mmenu)
+//            textView3 = view.findViewById(R.id.textViewRecyclrString3Mmenu)
+//            textView4 = view.findViewById(R.id.id_tab)
+//            textView5 = view.findViewById(R.id.weight)
+//            if (AppCompatDelegate.getDefaultNightMode() == 2) {
+                string1.setTextColor(Color.BLACK)
+                string2.setTextColor(Color.BLACK)
+                string3.setTextColor(Color.BLACK)
+                string4.setTextColor(Color.BLACK)
+                string5.setTextColor(Color.BLACK)
+//            }
+//            if (AppCompatDelegate.getDefaultNightMode() == 1) {
+//                string1.setTextColor(Color.WHITE)
+//                string2.setTextColor(Color.WHITE)
+//                string3.setTextColor(Color.WHITE)
+//                string4.setTextColor(Color.WHITE)
+//                string5.setTextColor(Color.WHITE)
+//            }
+
         }
 
         //        val nn = fun(userRepository: UserRepository) {}

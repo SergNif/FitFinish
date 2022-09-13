@@ -12,7 +12,7 @@
         android:label="Fit"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Fit"
+        android:theme="@style/Theme.TipTime"
         android:usesCleartextTraffic="true"
 
         tools:targetApi="31">

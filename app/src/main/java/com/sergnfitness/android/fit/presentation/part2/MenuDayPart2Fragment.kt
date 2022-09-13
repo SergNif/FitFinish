@@ -1,5 +1,6 @@
 package com.sergnfitness.android.fit.presentation.part2
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -8,7 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.NavDirections
@@ -41,7 +44,12 @@ class MenuDayPart2Fragment : Fragment() {
         fun newInstance() = MenuDayPart2Fragment()
     }
 
-
+private lateinit var   recyclerView:RecyclerView
+    private lateinit var textView1: TextView
+    private lateinit var textView2: TextView
+    private lateinit var textView3: TextView
+    private lateinit var textView4: TextView
+    private lateinit var textView5: TextView
     private val taG = "MenuDayPart2Fragment "
     private val viewModel: MenuDayPart2ViewModel by viewModels()
     private lateinit var binding: FragmentMenuDayPart2Binding
@@ -62,9 +70,12 @@ class MenuDayPart2Fragment : Fragment() {
         plusNextDay = iview.findViewById(R.id.plus_next_day_menu_next)
 //        initViewModel(iview)
 //        generator(20)
+
+
         initRecyclerView(iview)
 
         //searchMenuDay()
+
 
         return iview
 //        return binding.root
@@ -75,6 +86,8 @@ class MenuDayPart2Fragment : Fragment() {
         binding = FragmentMenuDayPart2Binding.bind(view)
         viewModel.dataUser = args.currentDataUser
         viewModel.userClass = args.currentUser
+
+
 //        viewModel.dataUserMenuDay = args.currentUserMenuDay
 //        viewModel.dataMenuDay = args.currentMenuDay
         binding.textDataRightPart2Page1.text =
@@ -94,6 +107,7 @@ class MenuDayPart2Fragment : Fragment() {
                 viewModel.funListWeightForChart(it.listMenuDay)
                 recyclerViewAdapter.menuList = it.listMenuDay.toMutableList()
                 recyclerViewAdapter.notifyDataSetChanged()
+
             }
         })
 
@@ -131,7 +145,7 @@ class MenuDayPart2Fragment : Fragment() {
     }
 
     fun initRecyclerView(view: View) {
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recycl)
+        recyclerView = view.findViewById<RecyclerView>(R.id.recycl)
         recyclerView.layoutManager = LinearLayoutManager(activity)
         recyclerViewAdapter = RecyclerViewAdapter()//(menuList)
         recyclerView.adapter = recyclerViewAdapter
